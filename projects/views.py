@@ -5,6 +5,9 @@ from .models import Project
 def index(request):
     return render(request, 'projects/index.html')
 
+def resume(request):
+    return render(request, 'projects/resume.html')
+
 def projects(request):
     projects = Project.objects.all()
     count = projects.count()
@@ -13,4 +16,7 @@ def projects(request):
         'projects': projects,
     }
     return render(request, 'projects/projects.html', context)
+
+def contact(request):
+    return render(request, 'projects/contact.html')
 
