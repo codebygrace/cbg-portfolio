@@ -1,0 +1,46 @@
+:root {
+    --primary-color: rgb(244, 247, 245);
+    --secondary-color: rgb(150, 100, 100);
+    --card-bg-color: rgb(255, 255, 255);
+    --contrast-color: rgb(46, 44, 43);
+}
+
+html[data-theme='dark'] {
+    --primary-color: rgb(46, 44, 43);
+    --secondary-color: rgb(218, 191, 191);
+    --card-bg-color: rgb(25, 24, 23);
+    --contrast-color: rgb(244, 247, 245);
+}
+
+
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'KoHo', sans-serif;
+}
+
+.button {
+    border-radius: 10px;
+    border: 5px solid var(--secondary-color);
+    color: var(--contrast-color);
+    background-color: var(--primary-color);
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.icon-link {
+    color: var(--contrast-color);
+}
+
+.icon-link:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+/* NAVBAR */
