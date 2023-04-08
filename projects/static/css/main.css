@@ -21,13 +21,47 @@ html[data-theme='dark'] {
     font-family: 'KoHo', sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.font-wgt-reg {
+    font-weight: 400;
+}
+
+.font-wgt-med {
+    font-weight: 500;
+}
+
+.font-wgt-semibold {
+    font-weight: 600;
+}
+
+.font-wgt-bold {
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button,
 .button {
     border-radius: 10px;
     border: 5px solid var(--secondary-color);
     color: var(--contrast-color);
     background-color: var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
 }
 
+button,
 .button:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -44,3 +78,31 @@ html[data-theme='dark'] {
 }
 
 /* NAVBAR */
+.navbar {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+}
+
+.nav-link {
+    color: var(--primary-color);
+}
+
+.theme-btn {
+    border: 3px solid rgb(46, 44, 43);
+    transition: all 0.2s ease-in-out;
+    padding: 3px 5px;
+}
+
+.theme-btn:hover {
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.45);
+}
+
+.theme-btn-dark {
+    background-color: rgb(46, 44, 43);
+    color: rgb(244, 247, 245);
+}
+
+.theme-btn-light {
+    background-color: rgb(244, 247, 245);
+    color: rgb(46, 44, 43);
+}
