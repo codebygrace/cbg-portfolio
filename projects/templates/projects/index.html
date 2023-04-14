@@ -1,7 +1,58 @@
 {% extends 'base.html'%}
 
 {% block content %}
-    <div class="test">
-        <h1>This is the song that never ends...</h1>
-    </div>
+    <main class="container">
+        <div class="placeholder-class">
+            <div class="info">
+                <div class="about-me">
+                    <h1 class="name">Grace Mills</h1>
+                    <p class="title">Software Developer</p>
+                </div>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/codebygrace" class="social-link">
+                        <span class="iconify" data-icon="basil:linkedin-outline"></span>
+                        <span class="social-name">LinkedIn</span>
+                    </a>
+                    <a href="https://www.github.com/codebygrace" class="social-link">
+                        <span class="iconify" data-icon="akar-icons:github-outline-fill"></span>
+                        <span class="social-name">GitHub</span>
+                    </a>
+                    <a href="" class="social-link">
+                        <span class="iconify" data-icon="solar:calendar-outline"></span>
+                        <span class="social-name">Calendly (Coffee Chat)</span>
+                    </a>
+                </div>
+            </div>
+            <div class="profile-img">
+                <img src="" alt="headshot of Grace Mills">
+            </div>
+        </div>
+        <div class="btn-container">
+            <a href="{% url 'projects' %}" class="button project-btn">Projects</a>
+            <a href="" class="button resume-btn">Resume</a>
+        </div>
+
+        <div class="technologies">
+            <div class="tech-wrapper">
+                <span class="iconify" data-icon="iconoir:html5"></span>
+                <p class="tech-name">HTML</p>
+            </div>
+            <div class="tech-wrapper">
+                <span class="iconify" data-icon="iconoir:css3"></span>
+                <p class="tech-name">CSS</p>
+            </div>
+            <div class="tech-wrapper">
+                <span class="iconify" data-icon="fa-brands:js-square"></span>
+                <p class="tech-name">JavaScript</p>
+            </div>
+            <div class="tech-wrapper">
+                <span class="iconify" data-icon="fa-brands:react"></span>
+                <p class="tech-name">React (Learning)</p>
+            </div>
+            <div class="tech-wrapper">
+                <span class="iconify" data-icon="fa6-brands:java"></span>
+                <p class="tech-name">Java (Learning)</p>
+            </div>
+        </div>
+    </main>
 {% endblock %}

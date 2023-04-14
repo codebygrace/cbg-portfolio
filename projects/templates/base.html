@@ -16,17 +16,27 @@
     <link rel="stylesheet" href="{% static 'css/contact.css' %}">
     <link rel="stylesheet" href="{% static 'css/media.css' %}">
 
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
     <title>{% block title %} Code by Grace - A Portfolio by Grace Mills {% endblock %}</title>
 </head>
 <body>
     <nav class="navbar flex">
-        <a href="{% url 'index' %}" class="logo">{codebygrace}</a>
+        <a href="{% url 'index' %}" class="logo font-wgt-semibold">{codebygrace}</a>
 
-        <ul class="nav-items flex">
-            <li><a href="{% url 'index' %}" class="nav-link">Home</a></li>
-            <li><a href="" class="nav-link">Resume</a></li>
-            <li><a href="{% url 'projects' %}" class="nav-link">Projects</a></li>
-            <li><a href="" class="nav-link">Contact</a></li>
+        <ul class="nav-list flex">
+            <li class="nav-item">
+                <a href="{% url 'index' %}" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a href="{% url 'projects' %}" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Contact</a>
+            </li>
         </ul>
 
         <div class="theme-switches">
@@ -34,7 +44,7 @@
             <button class="theme-btn theme-btn-light">Light</button>
         </div>
  
-        <div class="menu-btns">
+        <div class="menu-btn">
             <span class="menu-bar bar1"></span>
             <span class="menu-bar bar2"></span>
             <span class="menu-bar bar3"></span>

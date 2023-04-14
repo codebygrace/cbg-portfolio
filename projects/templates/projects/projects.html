@@ -3,7 +3,22 @@
 {% block title %} Projects - Code by Grace {% endblock %}
 
 {% block content %}
-    <div class="test">
-        <h1>There are {{ count }} projects currently uploaded.</h1>
-    </div>
+    <main class="container">
+        <h1 class="page-title">Projects</h1>
+        <div class="project-wrapper flex">
+            {% for Project in projects %}
+                <a href="{{ Project.link }}" class="proj-link">
+                    <div class="project-card flex">
+                        <img src="{{ Project.image }}" alt="{{ Project.title }} thumbnail" class="project-img">
+                        <div class="proj-details">
+                            <h2 class="proj-title">{{ Project.title }}</h2>
+                            <p class="proj-date">{{ Project.date }}</p>
+                            <p class="proj-tech">{{ Project.technologies }}</p>
+                        </div>
+                        <p class="proj-description">{{ Project.description }}</p>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </main>
 {% endblock %}
