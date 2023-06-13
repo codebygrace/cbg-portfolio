@@ -1,0 +1,160 @@
+:root {
+    --primary-color: rgb(244, 247, 245);
+    --secondary-color: rgb(150, 100, 100);
+    --card-bg-color: rgb(255, 255, 255);
+    --contrast-color: rgb(46, 44, 43);
+}
+
+html[data-theme='dark'] {
+    --primary-color: rgb(46, 44, 43);
+    --secondary-color: rgb(218, 191, 191);
+    --card-bg-color: rgb(25, 24, 23);
+    --contrast-color: rgb(244, 247, 245);
+}
+
+
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'KoHo', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--contrast-color);
+}
+
+.font-wgt-reg {
+    font-weight: 400;
+}
+
+.font-wgt-med {
+    font-weight: 500;
+}
+
+.font-wgt-semibold {
+    font-weight: 600;
+}
+
+.font-wgt-bold {
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button,
+.button {
+    border-radius: 10px;
+    border: 5px solid var(--secondary-color);
+    color: var(--contrast-color);
+    background-color: var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button,
+.button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.icon-link {
+    color: var(--contrast-color);
+}
+
+.icon-link:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+/* NAVBAR */
+.navbar {
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    padding: 0.5rem 1rem;
+}
+
+.logo {
+    color: var(--primary-color);
+}
+
+.nav-item {
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-item:hover {
+    transform: scale(110%);
+}
+
+.nav-link {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.theme-btn {
+    border: 3px solid rgb(46, 44, 43);
+    transition: all 0.2s ease-in-out;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
+
+.theme-btn:hover {
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.45);
+}
+
+.theme-btn-dark {
+    background-color: rgb(46, 44, 43);
+    color: rgb(244, 247, 245);
+}
+
+.theme-btn-light {
+    background-color: rgb(244, 247, 245);
+    color: rgb(46, 44, 43);
+}
+
+.menu-btn {
+    /* flex-direction: column;
+    gap: 3px; */
+    width: 45px;
+    height: 45px;
+}
+
+.menu-bar {
+    border: 2px solid var(--primary-color);
+    border-radius: 100px;
+    width: 90%;
+}
+
+/* MAIN CONTENT - INDEX */
+.iconify {
+    color: var(--contrast-color);
+    padding: 5px;
+    font-size: 50px;
+}
+
+.social-link {
+    border-radius: 10px;
+}
+
+.social-name {
+    opacity: 0;
+}
+
+.social-link:hover {
+    background-color: var(--secondary-color);
+}
+
+.social-link:hover .social-name {
+    opacity: 1;
+}
