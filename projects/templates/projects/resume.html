@@ -1,7 +1,71 @@
 {% extends 'base.html'%}
 
-{% block title %} {% endblock %}
+{% block title %} Resume - Code by Grace {% endblock %}
 
 {% block content %}
-    
+    <div class="container">
+        <div class="top-line flex">
+            <div class="name-job-link">
+                <h1 class="name">Grace Mills</h1>
+                <h2 class="job-position">Software Developer</h2>
+                <a href="" class="resume-link button">Download Resume</a>
+            </div>
+            <div class="technologies flex">
+                <div class="tech-wrapper">
+                    <span class="iconify" data-icon="iconoir:html5"></span>
+                    <p class="tech-name">HTML</p>
+                </div>
+                <div class="tech-wrapper">
+                    <span class="iconify" data-icon="iconoir:css3"></span>
+                    <p class="tech-name">CSS</p>
+                </div>
+                <div class="tech-wrapper">
+                    <span class="iconify" data-icon="fa-brands:js-square"></span>
+                    <p class="tech-name">JavaScript</p>
+                </div>
+                <div class="tech-wrapper">
+                    <span class="iconify" data-icon="fa-brands:react"></span>
+                    <p class="tech-name">React (Learning)</p>
+                </div>
+                <div class="tech-wrapper">
+                    <span class="iconify" data-icon="fa6-brands:java"></span>
+                    <p class="tech-name">Java (Learning)</p>
+                </div>
+            </div>
+        </div>
+        <div class="experience">
+            <h3 class="section-title">Experience</h3>
+            <div class="work-wrapper">
+                <div class="work-item">
+                    <div class="job-details">
+                        <h4 class="job-title">Student Software Developer</h4>
+                        <p class="job-company">Quickstart Bootcamps</p>
+                        <p class="job-date">Nov 2021 - Feb 2023</p>
+                    </div>
+                    <p class="job-description">Utilized and learned several markup and programming languages to complete and deploy 4 projects while abiding by set technical specifications</p>
+                </div>
+                <div class="work-item">
+                    <div class="job-details">
+                        <h4 class="job-title">Line Cook</h4>
+                        <p class="job-company">Panera Bread</p>
+                        <p class="job-date">Nov 2020 - Mar 2021</p>
+                    </div>
+                    <p class="job-description">Increased sales and ensured customer satisfaction by efficiently preparing food and drink orders to the specifications of each customer</p>
+                </div>
+                <div class="work-item">
+                    <div class="job-details">
+                        <h4 class="job-title">Transcriptionist</h4>
+                        <p class="job-company">Rev</p>
+                        <p class="job-date">Mar 2019 - Nov 2020</p>
+                    </div>
+                    <p class="job-description">Produced accessible media by maintaining 100% accuracy (according to a style guide) while transcribing audio for various clients</p>
+                </div>
+            </div>
+        </div>
+        <div class="education">
+            <h4 class="edu-degree">B.A. in Psychology</h4>
+            <p class="edu-college">University of South Florida</p>
+            <p class="edu-date">Jun 2015 - May 2019</p>
+        </div>
+    </div>
 {% endblock %}

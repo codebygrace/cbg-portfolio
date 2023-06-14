@@ -1,7 +1,28 @@
 {% extends 'base.html'%}
 
-{% block title %} {% endblock %}
+{% block title %} Contact - Code by Grace {% endblock %}
 
 {% block content %}
-    
+    <div class="container">
+        <h1 class="contact-title">Contact Me</h1>
+        <p class="contact-text">To contact me, please fill out the form below or schedule a chat with me on <a href="#" class="chat-link">ChatSite</a>.</p>
+
+        <form action="" class="contact-form">
+            {% csrf_token %}
+            <div class="name-field">
+                <input type="text" name="firstName" id="firstName" placeholder="First Name *">
+                <input type="text" name="lastName" id="larstName" placeholder="Last Name *">
+            </div>
+            <div class="email-field">
+                <input type="email" name="email" id="email" placeholder="Email *">
+            </div>
+            <div class="subject-field">
+                <input type="text" name="subject" id="subject" placeholder="Subject">
+            </div>
+            <div class="message-field">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message *"></textarea>
+            </div>
+            <button class="button submit-btn">Submit</button>
+        </form>
+    </div>
 {% endblock %}
