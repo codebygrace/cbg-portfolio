@@ -21,7 +21,7 @@
     <title>{% block title %} Code by Grace - A Portfolio by Grace Mills {% endblock %}</title>
 </head>
 <body>
-    <nav class="navbar flex">
+    <nav class="navbar open flex">
         <a href="{% url 'index' %}" class="logo font-wgt-semibold">{codebygrace}</a>
 
         <ul class="nav-list flex">
@@ -29,13 +29,13 @@
                 <a href="{% url 'index' %}" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-                <a href="" class="nav-link">Resume</a>
+                <a href="{% url 'resume' %}" class="nav-link">Resume</a>
             </li>
             <li class="nav-item">
                 <a href="{% url 'projects' %}" class="nav-link">Projects</a>
             </li>
             <li class="nav-item">
-                <a href="" class="nav-link">Contact</a>
+                <a href="{% url 'contact' %}" class="nav-link">Contact</a>
             </li>
         </ul>
 
@@ -44,11 +44,11 @@
             <button class="theme-btn theme-btn-light">Light</button>
         </div>
  
-        <div class="menu-btn">
+        <button class="menu-btn flex">
             <span class="menu-bar bar1"></span>
             <span class="menu-bar bar2"></span>
             <span class="menu-bar bar3"></span>
-        </div>
+        </button>
     </nav>
 
     {% block content %}
