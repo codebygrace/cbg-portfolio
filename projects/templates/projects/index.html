@@ -1,33 +1,30 @@
 {% extends 'base.html'%}
 
 {% block content %}
-    <main class="container">
+    <main class="index-container">
         <div class="placeholder-class">
             <div class="info">
+                <div class="profile-img">
+                    <img src="" alt="headshot of Grace Mills">
+                </div>
                 <div class="about-me">
                     <h1 class="name">Grace Mills</h1>
                     <p class="title">Software Developer</p>
                 </div>
-                <div class="socials">
-                    <a href="https://www.linkedin.com/in/codebygrace" class="social-link">
-                        <span class="iconify" data-icon="basil:linkedin-outline"></span>
-                        <span class="social-name">LinkedIn</span>
+                <div class="socials flex">
+                    <a href="https://www.linkedin.com/in/codebygrace" class="social-link" target="_blank">
+                        <span class="iconify social-icon" data-icon="basil:linkedin-outline" alt="linkedin icon"></span>
                     </a>
-                    <a href="https://www.github.com/codebygrace" class="social-link">
-                        <span class="iconify" data-icon="uiw:github-o"></span>
-                        <span class="social-name">GitHub</span>
+                    <a href="https://www.github.com/codebygrace" class="social-link" target="_blank">
+                        <span class="iconify social-icon" data-icon="uiw:github-o" alt="github icon"></span>
                     </a>
-                    <a href="" class="social-link">
-                        <span class="iconify" data-icon="solar:calendar-outline"></span>
-                        <span class="social-name">Calendly (Coffee Chat)</span>
+                    <a href="" class="social-link" target="_blank">
+                        <span class="iconify social-icon" data-icon="solar:calendar-outline" alt="calendly icon (live chat)"></span>
                     </a>
                 </div>
             </div>
-            <div class="profile-img">
-                <img src="" alt="headshot of Grace Mills">
-            </div>
         </div>
-        <div class="btn-container">
+        <div class="btn-container flex">
             <a href="{% url 'projects' %}" class="button project-btn">Projects</a>
             <a href="" class="button resume-btn">Resume</a>
         </div>
