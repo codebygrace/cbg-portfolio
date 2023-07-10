@@ -22,26 +22,28 @@
 </head>
 <body>
     <nav class="navbar open flex">
-        <a href="{% url 'index' %}" class="logo font-wgt-semibold">{codebygrace}</a>
+        <a href="{% url 'index' %}" class="logo">{codebygrace}</a>
 
-        <ul class="nav-list flex">
-            <li class="nav-item">
-                <a href="{% url 'index' %}" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="{% url 'resume' %}" class="nav-link">Resume</a>
-            </li>
-            <li class="nav-item">
-                <a href="{% url 'projects' %}" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a href="{% url 'contact' %}" class="nav-link">Contact</a>
-            </li>
-        </ul>
+        <div class="nav-drop flex">
+            <ul class="nav-list flex">
+                <li class="nav-item">
+                    <a href="{% url 'index' %}" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'resume' %}" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'projects' %}" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'contact' %}" class="nav-link">Contact</a>
+                </li>
+            </ul>
 
-        <div class="theme-switches">
-            <button class="theme-btn theme-btn-dark">Dark</button>
-            <button class="theme-btn theme-btn-light">Light</button>
+            <div class="theme-switches">
+                <button class="theme-btn theme-btn-dark">Dark</button>
+                <button class="theme-btn theme-btn-light">Light</button>
+            </div>
         </div>
  
         <button class="menu-btn flex">
